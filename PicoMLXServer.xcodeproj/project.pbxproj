@@ -1,0 +1,881 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F8145FBC2B96B40C0086CBE7 /* MLX in Frameworks */ = {isa = PBXBuildFile; productRef = F8145FBB2B96B40C0086CBE7 /* MLX */; };
+		F8145FBE2B96B40C0086CBE7 /* MLXFFT in Frameworks */ = {isa = PBXBuildFile; productRef = F8145FBD2B96B40C0086CBE7 /* MLXFFT */; };
+		F8145FC02B96B40C0086CBE7 /* MLXLinalg in Frameworks */ = {isa = PBXBuildFile; productRef = F8145FBF2B96B40C0086CBE7 /* MLXLinalg */; };
+		F8145FC22B96B40C0086CBE7 /* MLXNN in Frameworks */ = {isa = PBXBuildFile; productRef = F8145FC12B96B40C0086CBE7 /* MLXNN */; };
+		F8145FC42B96B40C0086CBE7 /* MLXOptimizers in Frameworks */ = {isa = PBXBuildFile; productRef = F8145FC32B96B40C0086CBE7 /* MLXOptimizers */; };
+		F8145FC72B96B5590086CBE7 /* Transformers in Frameworks */ = {isa = PBXBuildFile; productRef = F8145FC62B96B5590086CBE7 /* Transformers */; };
+		F8145FD32BA128830086CBE7 /* BashOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8145FD22BA128830086CBE7 /* BashOperation.swift */; };
+		F8145FD52BA16C100086CBE7 /* PicoError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8145FD42BA16C100086CBE7 /* PicoError.swift */; };
+		F8145FD82BA16DD90086CBE7 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8145FD72BA16DD90086CBE7 /* String.swift */; };
+		F8145FDA2BA17F440086CBE7 /* Dependencies.plist in Resources */ = {isa = PBXBuildFile; fileRef = F8145FD92BA17F440086CBE7 /* Dependencies.plist */; };
+		F8145FDD2BA205830086CBE7 /* Platform.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8145FDC2BA205830086CBE7 /* Platform.swift */; };
+		F8145FDF2BA207A80086CBE7 /* Dependency.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8145FDE2BA207A80086CBE7 /* Dependency.swift */; };
+		F8145FE12BA213400086CBE7 /* SetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8145FE02BA213400086CBE7 /* SetupView.swift */; };
+		F8145FE82BA21DB40086CBE7 /* SplitView in Frameworks */ = {isa = PBXBuildFile; productRef = F8145FE72BA21DB40086CBE7 /* SplitView */; };
+		F8145FEB2BA21DD40086CBE7 /* Collections in Frameworks */ = {isa = PBXBuildFile; productRef = F8145FEA2BA21DD40086CBE7 /* Collections */; };
+		F8145FF12BA226170086CBE7 /* NSApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8145FF02BA226170086CBE7 /* NSApplication.swift */; };
+		F8145FF32BA2624D0086CBE7 /* PlatformViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8145FF22BA2624C0086CBE7 /* PlatformViewModel.swift */; };
+		F8145FF52BA262AD0086CBE7 /* DependencyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8145FF42BA262AD0086CBE7 /* DependencyViewModel.swift */; };
+		F8145FFA2BA264D10086CBE7 /* BrewInstall.command in Resources */ = {isa = PBXBuildFile; fileRef = F8145FF72BA264D00086CBE7 /* BrewInstall.command */; };
+		F8145FFB2BA264D10086CBE7 /* Execute.command in Resources */ = {isa = PBXBuildFile; fileRef = F8145FF82BA264D10086CBE7 /* Execute.command */; };
+		F8145FFC2BA264D10086CBE7 /* uninstall.command in Resources */ = {isa = PBXBuildFile; fileRef = F8145FF92BA264D10086CBE7 /* uninstall.command */; };
+		F8145FFE2BA27C960086CBE7 /* DependencyState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8145FFD2BA27C960086CBE7 /* DependencyState.swift */; };
+		F81460002BA283290086CBE7 /* DependencyViewModel+Operations.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8145FFF2BA283290086CBE7 /* DependencyViewModel+Operations.swift */; };
+		F81460022BA2A9C10086CBE7 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81460012BA2A9C10086CBE7 /* Queue.swift */; };
+		F81460052BA2DF440086CBE7 /* FullDiskAccess in Frameworks */ = {isa = PBXBuildFile; productRef = F81460042BA2DF440086CBE7 /* FullDiskAccess */; };
+		F818D9522B96A4DC00BA4664 /* PicoMLXServerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F818D9512B96A4DC00BA4664 /* PicoMLXServerApp.swift */; };
+		F818D9562B96A4DE00BA4664 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F818D9552B96A4DE00BA4664 /* Assets.xcassets */; };
+		F818D9592B96A4DE00BA4664 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F818D9582B96A4DE00BA4664 /* Preview Assets.xcassets */; };
+		F818D9642B96A4DE00BA4664 /* PicoMLXServerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F818D9632B96A4DE00BA4664 /* PicoMLXServerTests.swift */; };
+		F818D96E2B96A4DE00BA4664 /* PicoMLXServerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F818D96D2B96A4DE00BA4664 /* PicoMLXServerUITests.swift */; };
+		F818D9702B96A4DE00BA4664 /* PicoMLXServerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F818D96F2B96A4DE00BA4664 /* PicoMLXServerUITestsLaunchTests.swift */; };
+		F818D97D2B96A7B400BA4664 /* MenuExtra.swift in Sources */ = {isa = PBXBuildFile; fileRef = F818D97C2B96A7B400BA4664 /* MenuExtra.swift */; };
+		F818D97F2B96A80500BA4664 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F818D97E2B96A80500BA4664 /* SettingsView.swift */; };
+		F84D2A6A2BAA4C5900FB2D41 /* ServerCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84D2A692BAA4C5900FB2D41 /* ServerCellView.swift */; };
+		F861C3842BAA67E4004BBB86 /* ServerLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F861C3832BAA67E4004BBB86 /* ServerLogView.swift */; };
+		F88F11102BA92D5B004743A5 /* ServerManagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88F110F2BA92D5B004743A5 /* ServerManagerView.swift */; };
+		F88F11122BA92D75004743A5 /* ServerListMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88F11112BA92D75004743A5 /* ServerListMenu.swift */; };
+		F8907A382BA8060B00246735 /* server.py in Resources */ = {isa = PBXBuildFile; fileRef = F8907A372BA8060B00246735 /* server.py */; };
+		F8907A3A2BA807AB00246735 /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8907A392BA807AB00246735 /* Server.swift */; };
+		F8907A3C2BA8B42200246735 /* ServerOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8907A3B2BA8B42200246735 /* ServerOperation.swift */; };
+		F8907A3E2BA8D83700246735 /* ServerListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8907A3D2BA8D83700246735 /* ServerListView.swift */; };
+		F8907A402BA8F2BD00246735 /* ServerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8907A3F2BA8F2BD00246735 /* ServerController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F818D9602B96A4DE00BA4664 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F818D9462B96A4DC00BA4664 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F818D94D2B96A4DC00BA4664;
+			remoteInfo = PicoMLXServer;
+		};
+		F818D96A2B96A4DE00BA4664 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F818D9462B96A4DC00BA4664 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F818D94D2B96A4DC00BA4664;
+			remoteInfo = PicoMLXServer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F8145FD22BA128830086CBE7 /* BashOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BashOperation.swift; sourceTree = "<group>"; };
+		F8145FD42BA16C100086CBE7 /* PicoError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicoError.swift; sourceTree = "<group>"; };
+		F8145FD72BA16DD90086CBE7 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		F8145FD92BA17F440086CBE7 /* Dependencies.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Dependencies.plist; sourceTree = "<group>"; };
+		F8145FDC2BA205830086CBE7 /* Platform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Platform.swift; sourceTree = "<group>"; };
+		F8145FDE2BA207A80086CBE7 /* Dependency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dependency.swift; sourceTree = "<group>"; };
+		F8145FE02BA213400086CBE7 /* SetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupView.swift; sourceTree = "<group>"; };
+		F8145FF02BA226170086CBE7 /* NSApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSApplication.swift; sourceTree = "<group>"; };
+		F8145FF22BA2624C0086CBE7 /* PlatformViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlatformViewModel.swift; sourceTree = "<group>"; };
+		F8145FF42BA262AD0086CBE7 /* DependencyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyViewModel.swift; sourceTree = "<group>"; };
+		F8145FF72BA264D00086CBE7 /* BrewInstall.command */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = BrewInstall.command; sourceTree = "<group>"; };
+		F8145FF82BA264D10086CBE7 /* Execute.command */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = Execute.command; sourceTree = "<group>"; };
+		F8145FF92BA264D10086CBE7 /* uninstall.command */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = uninstall.command; sourceTree = "<group>"; };
+		F8145FFD2BA27C960086CBE7 /* DependencyState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyState.swift; sourceTree = "<group>"; };
+		F8145FFF2BA283290086CBE7 /* DependencyViewModel+Operations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DependencyViewModel+Operations.swift"; sourceTree = "<group>"; };
+		F81460012BA2A9C10086CBE7 /* Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
+		F818D94E2B96A4DC00BA4664 /* PicoMLXServer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PicoMLXServer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F818D9512B96A4DC00BA4664 /* PicoMLXServerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicoMLXServerApp.swift; sourceTree = "<group>"; };
+		F818D9552B96A4DE00BA4664 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F818D9582B96A4DE00BA4664 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F818D95A2B96A4DE00BA4664 /* PicoMLXServer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PicoMLXServer.entitlements; sourceTree = "<group>"; };
+		F818D95F2B96A4DE00BA4664 /* PicoMLXServerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PicoMLXServerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F818D9632B96A4DE00BA4664 /* PicoMLXServerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicoMLXServerTests.swift; sourceTree = "<group>"; };
+		F818D9692B96A4DE00BA4664 /* PicoMLXServerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PicoMLXServerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F818D96D2B96A4DE00BA4664 /* PicoMLXServerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicoMLXServerUITests.swift; sourceTree = "<group>"; };
+		F818D96F2B96A4DE00BA4664 /* PicoMLXServerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicoMLXServerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F818D97C2B96A7B400BA4664 /* MenuExtra.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuExtra.swift; sourceTree = "<group>"; };
+		F818D97E2B96A80500BA4664 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		F84D2A692BAA4C5900FB2D41 /* ServerCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerCellView.swift; sourceTree = "<group>"; };
+		F861C3832BAA67E4004BBB86 /* ServerLogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerLogView.swift; sourceTree = "<group>"; };
+		F88F110F2BA92D5B004743A5 /* ServerManagerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerManagerView.swift; sourceTree = "<group>"; };
+		F88F11112BA92D75004743A5 /* ServerListMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerListMenu.swift; sourceTree = "<group>"; };
+		F8907A372BA8060B00246735 /* server.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = server.py; sourceTree = "<group>"; };
+		F8907A392BA807AB00246735 /* Server.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Server.swift; sourceTree = "<group>"; };
+		F8907A3B2BA8B42200246735 /* ServerOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerOperation.swift; sourceTree = "<group>"; };
+		F8907A3D2BA8D83700246735 /* ServerListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerListView.swift; sourceTree = "<group>"; };
+		F8907A3F2BA8F2BD00246735 /* ServerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerController.swift; sourceTree = "<group>"; };
+		F8C7C6732BAB55A800B24BB5 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		F8C7C6742BAB55B100B24BB5 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F818D94B2B96A4DC00BA4664 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F81460052BA2DF440086CBE7 /* FullDiskAccess in Frameworks */,
+				F8145FC72B96B5590086CBE7 /* Transformers in Frameworks */,
+				F8145FC42B96B40C0086CBE7 /* MLXOptimizers in Frameworks */,
+				F8145FEB2BA21DD40086CBE7 /* Collections in Frameworks */,
+				F8145FBC2B96B40C0086CBE7 /* MLX in Frameworks */,
+				F8145FC02B96B40C0086CBE7 /* MLXLinalg in Frameworks */,
+				F8145FC22B96B40C0086CBE7 /* MLXNN in Frameworks */,
+				F8145FBE2B96B40C0086CBE7 /* MLXFFT in Frameworks */,
+				F8145FE82BA21DB40086CBE7 /* SplitView in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F818D95C2B96A4DE00BA4664 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F818D9662B96A4DE00BA4664 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F8145FD12BA127470086CBE7 /* Setup */ = {
+			isa = PBXGroup;
+			children = (
+				F8145FDB2BA205470086CBE7 /* Models */,
+				F8145FE02BA213400086CBE7 /* SetupView.swift */,
+			);
+			path = Setup;
+			sourceTree = "<group>";
+		};
+		F8145FD62BA16DCF0086CBE7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F8145FD72BA16DD90086CBE7 /* String.swift */,
+				F8145FF02BA226170086CBE7 /* NSApplication.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F8145FDB2BA205470086CBE7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F8145FD92BA17F440086CBE7 /* Dependencies.plist */,
+				F8145FDC2BA205830086CBE7 /* Platform.swift */,
+				F8145FDE2BA207A80086CBE7 /* Dependency.swift */,
+				F8145FF22BA2624C0086CBE7 /* PlatformViewModel.swift */,
+				F8145FF42BA262AD0086CBE7 /* DependencyViewModel.swift */,
+				F8145FFF2BA283290086CBE7 /* DependencyViewModel+Operations.swift */,
+				F8145FFD2BA27C960086CBE7 /* DependencyState.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F8145FF62BA264B80086CBE7 /* Bash Commands */ = {
+			isa = PBXGroup;
+			children = (
+				F8145FD22BA128830086CBE7 /* BashOperation.swift */,
+				F81460012BA2A9C10086CBE7 /* Queue.swift */,
+				F8145FF72BA264D00086CBE7 /* BrewInstall.command */,
+				F8145FF82BA264D10086CBE7 /* Execute.command */,
+				F8145FF92BA264D10086CBE7 /* uninstall.command */,
+			);
+			path = "Bash Commands";
+			sourceTree = "<group>";
+		};
+		F818D9452B96A4DC00BA4664 = {
+			isa = PBXGroup;
+			children = (
+				F8C7C6732BAB55A800B24BB5 /* README.md */,
+				F8C7C6742BAB55B100B24BB5 /* LICENSE */,
+				F818D9502B96A4DC00BA4664 /* PicoMLXServer */,
+				F818D9622B96A4DE00BA4664 /* PicoMLXServerTests */,
+				F818D96C2B96A4DE00BA4664 /* PicoMLXServerUITests */,
+				F818D94F2B96A4DC00BA4664 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F818D94F2B96A4DC00BA4664 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F818D94E2B96A4DC00BA4664 /* PicoMLXServer.app */,
+				F818D95F2B96A4DE00BA4664 /* PicoMLXServerTests.xctest */,
+				F818D9692B96A4DE00BA4664 /* PicoMLXServerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F818D9502B96A4DC00BA4664 /* PicoMLXServer */ = {
+			isa = PBXGroup;
+			children = (
+				F818D9512B96A4DC00BA4664 /* PicoMLXServerApp.swift */,
+				F8145FD62BA16DCF0086CBE7 /* Extensions */,
+				F8145FF62BA264B80086CBE7 /* Bash Commands */,
+				F8145FD12BA127470086CBE7 /* Setup */,
+				F8907A362BA800B100246735 /* Server Manager */,
+				F88F110D2BA92CC2004743A5 /* Menu */,
+				F818D97E2B96A80500BA4664 /* SettingsView.swift */,
+				F8145FD42BA16C100086CBE7 /* PicoError.swift */,
+				F818D9552B96A4DE00BA4664 /* Assets.xcassets */,
+				F818D95A2B96A4DE00BA4664 /* PicoMLXServer.entitlements */,
+				F818D9572B96A4DE00BA4664 /* Preview Content */,
+			);
+			path = PicoMLXServer;
+			sourceTree = "<group>";
+		};
+		F818D9572B96A4DE00BA4664 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F818D9582B96A4DE00BA4664 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F818D9622B96A4DE00BA4664 /* PicoMLXServerTests */ = {
+			isa = PBXGroup;
+			children = (
+				F818D9632B96A4DE00BA4664 /* PicoMLXServerTests.swift */,
+			);
+			path = PicoMLXServerTests;
+			sourceTree = "<group>";
+		};
+		F818D96C2B96A4DE00BA4664 /* PicoMLXServerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F818D96D2B96A4DE00BA4664 /* PicoMLXServerUITests.swift */,
+				F818D96F2B96A4DE00BA4664 /* PicoMLXServerUITestsLaunchTests.swift */,
+			);
+			path = PicoMLXServerUITests;
+			sourceTree = "<group>";
+		};
+		F88F110D2BA92CC2004743A5 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				F818D97C2B96A7B400BA4664 /* MenuExtra.swift */,
+				F88F11112BA92D75004743A5 /* ServerListMenu.swift */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		F88F110E2BA92CEC004743A5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F8907A372BA8060B00246735 /* server.py */,
+				F8907A392BA807AB00246735 /* Server.swift */,
+				F8907A3F2BA8F2BD00246735 /* ServerController.swift */,
+				F8907A3B2BA8B42200246735 /* ServerOperation.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F8907A362BA800B100246735 /* Server Manager */ = {
+			isa = PBXGroup;
+			children = (
+				F88F110E2BA92CEC004743A5 /* Models */,
+				F88F110F2BA92D5B004743A5 /* ServerManagerView.swift */,
+				F8907A3D2BA8D83700246735 /* ServerListView.swift */,
+				F84D2A692BAA4C5900FB2D41 /* ServerCellView.swift */,
+				F861C3832BAA67E4004BBB86 /* ServerLogView.swift */,
+			);
+			path = "Server Manager";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F818D94D2B96A4DC00BA4664 /* PicoMLXServer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F818D9732B96A4DE00BA4664 /* Build configuration list for PBXNativeTarget "PicoMLXServer" */;
+			buildPhases = (
+				F818D94A2B96A4DC00BA4664 /* Sources */,
+				F818D94B2B96A4DC00BA4664 /* Frameworks */,
+				F818D94C2B96A4DC00BA4664 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PicoMLXServer;
+			packageProductDependencies = (
+				F8145FBB2B96B40C0086CBE7 /* MLX */,
+				F8145FBD2B96B40C0086CBE7 /* MLXFFT */,
+				F8145FBF2B96B40C0086CBE7 /* MLXLinalg */,
+				F8145FC12B96B40C0086CBE7 /* MLXNN */,
+				F8145FC32B96B40C0086CBE7 /* MLXOptimizers */,
+				F8145FC62B96B5590086CBE7 /* Transformers */,
+				F8145FE72BA21DB40086CBE7 /* SplitView */,
+				F8145FEA2BA21DD40086CBE7 /* Collections */,
+				F81460042BA2DF440086CBE7 /* FullDiskAccess */,
+			);
+			productName = PicoMLXServer;
+			productReference = F818D94E2B96A4DC00BA4664 /* PicoMLXServer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F818D95E2B96A4DE00BA4664 /* PicoMLXServerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F818D9762B96A4DE00BA4664 /* Build configuration list for PBXNativeTarget "PicoMLXServerTests" */;
+			buildPhases = (
+				F818D95B2B96A4DE00BA4664 /* Sources */,
+				F818D95C2B96A4DE00BA4664 /* Frameworks */,
+				F818D95D2B96A4DE00BA4664 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F818D9612B96A4DE00BA4664 /* PBXTargetDependency */,
+			);
+			name = PicoMLXServerTests;
+			productName = PicoMLXServerTests;
+			productReference = F818D95F2B96A4DE00BA4664 /* PicoMLXServerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F818D9682B96A4DE00BA4664 /* PicoMLXServerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F818D9792B96A4DE00BA4664 /* Build configuration list for PBXNativeTarget "PicoMLXServerUITests" */;
+			buildPhases = (
+				F818D9652B96A4DE00BA4664 /* Sources */,
+				F818D9662B96A4DE00BA4664 /* Frameworks */,
+				F818D9672B96A4DE00BA4664 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F818D96B2B96A4DE00BA4664 /* PBXTargetDependency */,
+			);
+			name = PicoMLXServerUITests;
+			productName = PicoMLXServerUITests;
+			productReference = F818D9692B96A4DE00BA4664 /* PicoMLXServerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F818D9462B96A4DC00BA4664 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					F818D94D2B96A4DC00BA4664 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					F818D95E2B96A4DE00BA4664 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = F818D94D2B96A4DC00BA4664;
+					};
+					F818D9682B96A4DE00BA4664 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = F818D94D2B96A4DC00BA4664;
+					};
+				};
+			};
+			buildConfigurationList = F818D9492B96A4DC00BA4664 /* Build configuration list for PBXProject "PicoMLXServer" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F818D9452B96A4DC00BA4664;
+			packageReferences = (
+				F8145FBA2B96B40C0086CBE7 /* XCRemoteSwiftPackageReference "mlx-swift" */,
+				F8145FC52B96B5590086CBE7 /* XCRemoteSwiftPackageReference "swift-transformers" */,
+				F8145FE62BA21DB40086CBE7 /* XCRemoteSwiftPackageReference "SplitView" */,
+				F8145FE92BA21DD40086CBE7 /* XCRemoteSwiftPackageReference "swift-collections" */,
+				F81460032BA2DF440086CBE7 /* XCRemoteSwiftPackageReference "FullDiskAccess" */,
+			);
+			productRefGroup = F818D94F2B96A4DC00BA4664 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F818D94D2B96A4DC00BA4664 /* PicoMLXServer */,
+				F818D95E2B96A4DE00BA4664 /* PicoMLXServerTests */,
+				F818D9682B96A4DE00BA4664 /* PicoMLXServerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F818D94C2B96A4DC00BA4664 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F818D9592B96A4DE00BA4664 /* Preview Assets.xcassets in Resources */,
+				F818D9562B96A4DE00BA4664 /* Assets.xcassets in Resources */,
+				F8145FDA2BA17F440086CBE7 /* Dependencies.plist in Resources */,
+				F8145FFB2BA264D10086CBE7 /* Execute.command in Resources */,
+				F8907A382BA8060B00246735 /* server.py in Resources */,
+				F8145FFC2BA264D10086CBE7 /* uninstall.command in Resources */,
+				F8145FFA2BA264D10086CBE7 /* BrewInstall.command in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F818D95D2B96A4DE00BA4664 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F818D9672B96A4DE00BA4664 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F818D94A2B96A4DC00BA4664 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8907A3C2BA8B42200246735 /* ServerOperation.swift in Sources */,
+				F8145FFE2BA27C960086CBE7 /* DependencyState.swift in Sources */,
+				F88F11122BA92D75004743A5 /* ServerListMenu.swift in Sources */,
+				F818D97F2B96A80500BA4664 /* SettingsView.swift in Sources */,
+				F8145FF52BA262AD0086CBE7 /* DependencyViewModel.swift in Sources */,
+				F818D97D2B96A7B400BA4664 /* MenuExtra.swift in Sources */,
+				F8145FDF2BA207A80086CBE7 /* Dependency.swift in Sources */,
+				F818D9522B96A4DC00BA4664 /* PicoMLXServerApp.swift in Sources */,
+				F8907A3E2BA8D83700246735 /* ServerListView.swift in Sources */,
+				F8145FF12BA226170086CBE7 /* NSApplication.swift in Sources */,
+				F8145FD82BA16DD90086CBE7 /* String.swift in Sources */,
+				F84D2A6A2BAA4C5900FB2D41 /* ServerCellView.swift in Sources */,
+				F81460002BA283290086CBE7 /* DependencyViewModel+Operations.swift in Sources */,
+				F88F11102BA92D5B004743A5 /* ServerManagerView.swift in Sources */,
+				F861C3842BAA67E4004BBB86 /* ServerLogView.swift in Sources */,
+				F8145FD32BA128830086CBE7 /* BashOperation.swift in Sources */,
+				F8145FF32BA2624D0086CBE7 /* PlatformViewModel.swift in Sources */,
+				F81460022BA2A9C10086CBE7 /* Queue.swift in Sources */,
+				F8145FDD2BA205830086CBE7 /* Platform.swift in Sources */,
+				F8907A402BA8F2BD00246735 /* ServerController.swift in Sources */,
+				F8145FE12BA213400086CBE7 /* SetupView.swift in Sources */,
+				F8907A3A2BA807AB00246735 /* Server.swift in Sources */,
+				F8145FD52BA16C100086CBE7 /* PicoError.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F818D95B2B96A4DE00BA4664 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F818D9642B96A4DE00BA4664 /* PicoMLXServerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F818D9652B96A4DE00BA4664 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F818D9702B96A4DE00BA4664 /* PicoMLXServerUITestsLaunchTests.swift in Sources */,
+				F818D96E2B96A4DE00BA4664 /* PicoMLXServerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F818D9612B96A4DE00BA4664 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F818D94D2B96A4DC00BA4664 /* PicoMLXServer */;
+			targetProxy = F818D9602B96A4DE00BA4664 /* PBXContainerItemProxy */;
+		};
+		F818D96B2B96A4DE00BA4664 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F818D94D2B96A4DC00BA4664 /* PicoMLXServer */;
+			targetProxy = F818D96A2B96A4DE00BA4664 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F818D9712B96A4DE00BA4664 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F818D9722B96A4DE00BA4664 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		F818D9742B96A4DE00BA4664 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PicoMLXServer/PicoMLXServer.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PicoMLXServer/Preview Content\"";
+				DEVELOPMENT_TEAM = TPKP4XK352;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.starlingprotocol.PicoMLXServer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		F818D9752B96A4DE00BA4664 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PicoMLXServer/PicoMLXServer.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PicoMLXServer/Preview Content\"";
+				DEVELOPMENT_TEAM = TPKP4XK352;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.starlingprotocol.PicoMLXServer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		F818D9772B96A4DE00BA4664 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TPKP4XK352;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.starlingprotocol.PicoMLXServerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PicoMLXServer.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PicoMLXServer";
+			};
+			name = Debug;
+		};
+		F818D9782B96A4DE00BA4664 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TPKP4XK352;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.starlingprotocol.PicoMLXServerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PicoMLXServer.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PicoMLXServer";
+			};
+			name = Release;
+		};
+		F818D97A2B96A4DE00BA4664 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TPKP4XK352;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.starlingprotocol.PicoMLXServerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = PicoMLXServer;
+			};
+			name = Debug;
+		};
+		F818D97B2B96A4DE00BA4664 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TPKP4XK352;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.starlingprotocol.PicoMLXServerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = PicoMLXServer;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F818D9492B96A4DC00BA4664 /* Build configuration list for PBXProject "PicoMLXServer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F818D9712B96A4DE00BA4664 /* Debug */,
+				F818D9722B96A4DE00BA4664 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F818D9732B96A4DE00BA4664 /* Build configuration list for PBXNativeTarget "PicoMLXServer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F818D9742B96A4DE00BA4664 /* Debug */,
+				F818D9752B96A4DE00BA4664 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F818D9762B96A4DE00BA4664 /* Build configuration list for PBXNativeTarget "PicoMLXServerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F818D9772B96A4DE00BA4664 /* Debug */,
+				F818D9782B96A4DE00BA4664 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F818D9792B96A4DE00BA4664 /* Build configuration list for PBXNativeTarget "PicoMLXServerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F818D97A2B96A4DE00BA4664 /* Debug */,
+				F818D97B2B96A4DE00BA4664 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F8145FBA2B96B40C0086CBE7 /* XCRemoteSwiftPackageReference "mlx-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ml-explore/mlx-swift/";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		F8145FC52B96B5590086CBE7 /* XCRemoteSwiftPackageReference "swift-transformers" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/huggingface/swift-transformers.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		F8145FE62BA21DB40086CBE7 /* XCRemoteSwiftPackageReference "SplitView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/stevengharris/SplitView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.5.2;
+			};
+		};
+		F8145FE92BA21DD40086CBE7 /* XCRemoteSwiftPackageReference "swift-collections" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-collections.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.0;
+			};
+		};
+		F81460032BA2DF440086CBE7 /* XCRemoteSwiftPackageReference "FullDiskAccess" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/inket/FullDiskAccess";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F8145FBB2B96B40C0086CBE7 /* MLX */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F8145FBA2B96B40C0086CBE7 /* XCRemoteSwiftPackageReference "mlx-swift" */;
+			productName = MLX;
+		};
+		F8145FBD2B96B40C0086CBE7 /* MLXFFT */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F8145FBA2B96B40C0086CBE7 /* XCRemoteSwiftPackageReference "mlx-swift" */;
+			productName = MLXFFT;
+		};
+		F8145FBF2B96B40C0086CBE7 /* MLXLinalg */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F8145FBA2B96B40C0086CBE7 /* XCRemoteSwiftPackageReference "mlx-swift" */;
+			productName = MLXLinalg;
+		};
+		F8145FC12B96B40C0086CBE7 /* MLXNN */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F8145FBA2B96B40C0086CBE7 /* XCRemoteSwiftPackageReference "mlx-swift" */;
+			productName = MLXNN;
+		};
+		F8145FC32B96B40C0086CBE7 /* MLXOptimizers */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F8145FBA2B96B40C0086CBE7 /* XCRemoteSwiftPackageReference "mlx-swift" */;
+			productName = MLXOptimizers;
+		};
+		F8145FC62B96B5590086CBE7 /* Transformers */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F8145FC52B96B5590086CBE7 /* XCRemoteSwiftPackageReference "swift-transformers" */;
+			productName = Transformers;
+		};
+		F8145FE72BA21DB40086CBE7 /* SplitView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F8145FE62BA21DB40086CBE7 /* XCRemoteSwiftPackageReference "SplitView" */;
+			productName = SplitView;
+		};
+		F8145FEA2BA21DD40086CBE7 /* Collections */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F8145FE92BA21DD40086CBE7 /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = Collections;
+		};
+		F81460042BA2DF440086CBE7 /* FullDiskAccess */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F81460032BA2DF440086CBE7 /* XCRemoteSwiftPackageReference "FullDiskAccess" */;
+			productName = FullDiskAccess;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = F818D9462B96A4DC00BA4664 /* Project object */;
+}

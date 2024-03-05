@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>name</key>
+		<string>MLX on Conda (recommended)</string>
+		<key>projectUrl</key>
+		<string>https://github.com/ml-explore</string>
+		<key>documentationUrl</key>
+		<string>https://ml-explore.github.io/mlx/build/html/</string>
+		<key>dependencies</key>
+		<array>
+			<dict>
+				<key>name</key>
+				<string>brew</string>
+				<key>defaultLocation</key>
+				<string>/usr/local/bin/brew</string>
+				<key>isFrameworkVersion</key>
+				<false/>
+				<key>versionCommands</key>
+				<array>
+					<string>brew -v</string>
+				</array>
+				<key>versionRegex</key>
+				<string></string>
+				<key>minimumVersionRequired</key>
+				<string>4.2.12</string>
+				<key>installCommands</key>
+				<array/>
+				<key>installLink</key>
+				<string>https://brew.sh</string>
+				<key>updateCommands</key>
+				<array>
+					<string>brew update</string>
+				</array>
+				<key>outdatedCommand</key>
+				<string></string>
+				<key>comment</key>
+				<string>Brew is needed for installing conda</string>
+				<key>url</key>
+				<string>https://brew.sh</string>
+				<key>required</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>conda</string>
+				<key>versionCommands</key>
+				<array>
+					<string>conda --version</string>
+				</array>
+				<key>VersionRegex</key>
+				<string></string>
+				<key>minimumVersionRequired</key>
+				<string>24.1.2</string>
+				<key>installCommands</key>
+				<array>
+					<string>brew install miniforge</string>
+				</array>
+				<key>updateCommands</key>
+				<array>
+					<string>conda activate base</string>
+					<string>conda update --yes conda</string>
+					<string>conda update --yes --all</string>
+				</array>
+				<key>outdatedCommand</key>
+				<array>
+					<string>conda update --yes -n base -c conda-forge conda</string>
+				</array>
+				<key>comment</key>
+				<string>Conda is a tool for managing packages and virtual environments for Python</string>
+				<key>url</key>
+				<string>https://github.com/conda-forge/miniforge</string>
+				<key>required</key>
+				<true/>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>mlx</string>
+				<key>versionCommands</key>
+				<array>
+					<string>conda activate pico</string>
+					<string>pip show mlx</string>
+					<string>conda deactivate</string>
+				</array>
+				<key>minimumVersionRequired</key>
+				<string>0.7.0</string>
+				<key>versionRegex</key>
+				<string>(?&lt;=Version: )[\d.]+</string>
+				<key>installCommands</key>
+				<array>
+					<string>conda create --yes --name pico python=3.9.6</string>
+					<string>conda activate pico</string>
+					<string>conda install --yes conda-forge::mlx</string>
+					<string>conda deactivate</string>
+				</array>
+				<key>isInstalledCommand</key>
+				<string></string>
+				<key>updateCommands</key>
+				<array>
+					<string>conda activate pico</string>
+					<string>conda update --all --yes</string>
+					<string>conda deactivate</string>
+				</array>
+				<key>outdatedCommand</key>
+				<string></string>
+				<key>comment</key>
+				<string>MLX installed using conda-forge</string>
+				<key>url</key>
+				<string>https://ml-explore.github.io/mlx/build/html/install.html</string>
+				<key>required</key>
+				<true/>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>mlxserver</string>
+				<key>versionCommand</key>
+				<string>test</string>
+				<key>versionCommands</key>
+				<array>
+					<string>conda activate pico</string>
+					<string>pip show mlxserver</string>
+					<string>conda deactivate</string>
+				</array>
+				<key>minimumVersionRequired</key>
+				<string>0.1.14</string>
+				<key>versionRegex</key>
+				<string>(?&lt;=Version: )[\d.]+</string>
+				<key>installCommands</key>
+				<array>
+					<string>conda activate pico</string>
+					<string>pip install mlxserver</string>
+					<string>conda deactivate</string>
+				</array>
+				<key>isInstalledCommand</key>
+				<string></string>
+				<key>updateCommands</key>
+				<array>
+					<string>conda activate pico</string>
+					<string>conda update --yes mlx</string>
+					<string>conda deactivate</string>
+				</array>
+				<key>outdatedCommand</key>
+				<string></string>
+				<key>comment</key>
+				<string>MLX installed using conda-forge</string>
+				<key>url</key>
+				<string>https://ml-explore.github.io/mlx/build/html/install.html</string>
+				<key>required</key>
+				<true/>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>MLX using pip</string>
+		<key>projectUrl</key>
+		<string>https://github.com/ml-explore</string>
+		<key>documentationUrl</key>
+		<string>https://ml-explore.github.io/mlx/build/html/</string>
+		<key>dependencies</key>
+		<array>
+			<dict>
+				<key>name</key>
+				<string>brew</string>
+				<key>defaultLocation</key>
+				<string>/usr/local/bin/brew</string>
+				<key>versionCommands</key>
+				<array>
+					<string>brew -v</string>
+				</array>
+				<key>versionRegex</key>
+				<string></string>
+				<key>minimumVersionRequired</key>
+				<string>4.2.12</string>
+				<key>installCommands</key>
+				<array/>
+				<key>installLink</key>
+				<string>https://brew.sh</string>
+				<key>updateCommands</key>
+				<array>
+					<string>brew update</string>
+					<string>brew upgrade</string>
+				</array>
+				<key>outdatedCommands</key>
+				<array/>
+				<key>comment</key>
+				<string>Brew is needed for installing conda</string>
+				<key>url</key>
+				<string>https://brew.sh</string>
+				<key>required</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>python</string>
+				<key>versionCommands</key>
+				<array>
+					<string>python3 --version</string>
+				</array>
+				<key>minimumVersionRequired</key>
+				<string>3.8.0</string>
+				<key>installCommands</key>
+				<array/>
+				<key>updateCommands</key>
+				<array>
+					<string>brew update</string>
+					<string>brew upgrade python</string>
+				</array>
+				<key>outdatedCommands</key>
+				<array>
+					<string>brew outdated python</string>
+				</array>
+				<key>comment</key>
+				<string>Pip is the Python package installer required to install MLX</string>
+				<key>url</key>
+				<string>https://pypi.org/project/pip/</string>
+				<key>required</key>
+				<true/>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>mlx</string>
+				<key>versionCommands</key>
+				<array>
+					<string>pip show mlx</string>
+				</array>
+				<key>versionRegex</key>
+				<string>(?&lt;=Version: )[\d.]+</string>
+				<key>minimumVersionRequired</key>
+				<string>0.7.0</string>
+				<key>installCommands</key>
+				<array>
+					<string>python3 pip install mlx</string>
+				</array>
+				<key>isInstalledCommand</key>
+				<string></string>
+				<key>updateCommands</key>
+				<array>
+					<string>pip install mlx --upgrade</string>
+				</array>
+				<key>outdatedCommands</key>
+				<array>
+					<string>pip list --outdated | grep mlx</string>
+				</array>
+				<key>comment</key>
+				<string>MLX</string>
+				<key>url</key>
+				<string>https://ml-explore.github.io/mlx/build/html/install.html</string>
+				<key>required</key>
+				<true/>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>mlxserver</string>
+				<key>versionCommands</key>
+				<array>
+					<string>pip show mlxserver</string>
+				</array>
+				<key>versionRegex</key>
+				<string>(?&lt;=Version: )[\d.]+</string>
+				<key>minimumVersionRequired</key>
+				<string>0.1.14</string>
+				<key>installCommands</key>
+				<array>
+					<string>python3 pip install mlxserver</string>
+				</array>
+				<key>isInstalledCommand</key>
+				<string></string>
+				<key>updateCommands</key>
+				<array>
+					<string>pip install mlxserver --upgrade</string>
+				</array>
+				<key>outdatedCommands</key>
+				<array>
+					<string>pip list --outdated | grep mlxserver</string>
+				</array>
+				<key>comment</key>
+				<string>MLX Server</string>
+				<key>url</key>
+				<string>https://www.mlxserver.com/</string>
+				<key>required</key>
+				<true/>
+			</dict>
+		</array>
+	</dict>
+</array>
+</plist>
