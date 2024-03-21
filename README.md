@@ -30,6 +30,9 @@ To set up Pico MLX Server, open the app and
 
 ![Setup window screenshot](Images/setup.png)
 
+### Requirements
+- MacOS 14.0 (Sonoma) or later
+
 ### Create a New Server
 
 ![Menu extra screenshot](Images/serverManager.png)
