@@ -21,7 +21,7 @@ See [MLX Community on HuggingFace](https://huggingface.co/mlx-community)
 
 ## Getting Started
 
-To isntall, Pico MLX Server, build the source using Xcode, or download the [notarized executable directly from GitHub](https://github.com/ronaldmannak/PicoMLXServer/tags).
+To install Pico MLX Server, build the source using Xcode, or download the [notarized executable directly from GitHub](https://github.com/ronaldmannak/PicoMLXServer/tags).
 
 To set up Pico MLX Server, open the app and 
 - Install and set up Python, pip, [MLX](https://github.com/ml-explore/mlx) and [MLX Server](https://github.com/mustafaaljadery/mlxserver) and optionally Conda manually
