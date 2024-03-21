@@ -31,17 +31,21 @@ struct MenuExtra: View {
         
         Divider()
         
-        SettingsLink()
-            .keyboardShortcut(",", modifiers: .command)
-        
-        Button("Setup...") {
+        Button("Dependency Setup...") {
             NSApplication.show()
             openWindow(id: "setup")
         }
         
+        SettingsLink()
+            .keyboardShortcut(",", modifiers: .command)
+        
+        Button("Check for Updates...") {
+            openURL(URL(string: "https://github.com/ronaldmannak/PicoMLXServer/tags")!)
+        }
+        
         Divider()
         
-        Button("Stop all servers") {
+        Button("Stop all Servers") {
             serverController.stopAllServers()
         }
         .keyboardShortcut(".", modifiers: .command)

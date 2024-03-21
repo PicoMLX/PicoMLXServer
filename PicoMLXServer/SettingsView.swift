@@ -15,10 +15,24 @@ struct SettingsView: View {
     
     var body: some View {
         
-        Form {
-            Section("Pico MLX Settings") {
+        Form {            
+            Section {
                 TextField("Chat client url scheme", text: $chatClientURL)
+                Divider()
                 Toggle("Use Conda (recommended)", isOn: $useConda)
+                Divider()
+                
+            } header: {
+                Text("Pico MLX Settings")
+            } footer: {
+                if let version = Bundle.main.releaseVersionNumber,
+                    let build = Bundle.main.buildVersionNumber {
+                        Text("Version \(version) (\(build))")
+                            .foregroundColor(.gray)
+                            .font(.footnote)
+                } else {
+                    EmptyView()
+                }
             }
         }
         .padding()

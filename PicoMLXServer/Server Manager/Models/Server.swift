@@ -25,38 +25,40 @@ final class Server: Identifiable {
     var log: String = ""
     
     var isOn: Bool {
-        if let operation {
-            if operation.isFinished || operation.isCancelled {
-                return false
-            } else if operation.isExecuting == false {
-                return false
+        didSet {
+            if isOn == true {
+                // TODO: Create a server state that stores error?
+                try? start()
             } else {
-                return true
+                stop()
             }
-        } else {
-            return false
         }
+        
     }
     
     /// Points to the ServerOperation in the server queue
     /// If not nil, this server is running
+    @ObservationIgnored
     weak var operation: ServerOperation? = nil
     
     init(model: String, port: Int) {
         self.model = model
         self.port = port
+        self.isOn = false
     }
     
-    func start() throws {
+    private func start() throws {
         if operation == nil {
             let operation = try serverOperation()
             Queue.shared.serverQueue.addOperation(operation)
             self.operation = operation
+            isOn = true
         }
     }
     
-    func stop() {
+    private func stop() {
         operation?.cancel()
+        isOn = false
     }
     
     /// Creates a server operation

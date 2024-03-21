@@ -21,6 +21,7 @@ struct ServerManagerView: View {
     // TODO: https://x.com/ronaldmannak/status/1770123553666711778?s=20
     let models = [
         "mlx-community/Nous-Hermes-2-Mistral-7B-DPO-4bit-MLX",
+        "mlx-community/NeuralBeagle14-7B-4bit-mlx",
         "mlx-community/Mistral-7B-v0.1-hf-4bit-mlx",
         "mlx-community/starcoder2-15b-4bit",
         "mlx-community/quantized-gemma-2b-it",

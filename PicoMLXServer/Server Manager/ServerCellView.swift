@@ -26,16 +26,7 @@ struct ServerCellView: View {
             Text("\(String(server.port))")
             
             Button(server.isOn ? "Stop" : "Start") {
-                if server.isOn {
-                    server.stop()
-                } else {
-                    do {
-                        try server.start()
-                    } catch {
-                        self.error = error
-                        showError = true
-                    }
-                }
+                server.isOn.toggle()                
             }
             .controlSize(.small)
             

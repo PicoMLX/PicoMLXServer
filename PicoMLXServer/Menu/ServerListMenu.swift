@@ -6,11 +6,13 @@
 //
 
 import SwiftUI
+import AppKit
 
 struct ServerListMenu: View {
     
     @Environment(ServerController.self) private var serverController
     @Environment(\.openWindow) var openWindow
+    @Environment(\.openURL) var openURL
     
     var body: some View {
         Menu("Servers") {
@@ -29,6 +31,12 @@ struct ServerListMenu: View {
                 NSApplication.show()
                 openWindow(id: "servers")
             }            
+            
+            Button("Show cache...") {
+                let url = FileManager.default.homeDirectoryForCurrentUser.appending(path: ".cache/huggingface/hub/")
+                NSWorkspace.shared.selectFile(nil, inFileViewerRootedAtPath: url.path)
+            }
+            .controlSize(.small)
         }
     }
 }
@@ -40,27 +48,17 @@ struct ServerListMenu: View {
 
 struct MenuToggle: View {
     
-    var server: Server
+    let server: Server
     @State var isOn: Bool
     
     var body: some View {
-        Toggle(isOn: $isOn) {
+        @Bindable var server = server
+        Toggle(isOn: $server.isOn) {
             Text("\(server.model):\(String(server.port))")
                 .truncationMode(.head)
         }
         .onAppear {
             print(server.isOn)
-        }
-        .onChange(of: isOn, initial: false) { _, newValue in
-            if newValue == false, server.isOn == true {
-                server.stop()
-            } else if newValue == true, server.isOn == false {
-                do {
-                    try server.start()
-                } catch {
-                    print(error)
-                }
-            }
         }
     }
 }

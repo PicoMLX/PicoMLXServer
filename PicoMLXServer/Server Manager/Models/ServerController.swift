@@ -10,20 +10,13 @@ import SwiftUI
 @Observable
 final class ServerController {
     
-    private (set) var servers = [Server]()
+    var servers = [Server]()
     
-//    private (set) var activeServers = [Server]()
-    
-    func addServer(model: String = "mlx-community/Nous-Hermes-2-Mistral-7B-DPO-4bit-MLX", port: Int = 8080) throws {
-        
-        // Make sure port isn't in use
-//        guard activeServers.filter({ $0.port == port && $0.operation != nil }).isEmpty else {
-//            throw PicoError.portInUse(port)
-//        }
+    func addServer(model: String = "mlx-community/Nous-Hermes-2-Mistral-7B-DPO-4bit-MLX", port: Int = 8080) throws {                
         
         let server = Server(model: model, port: port)
         servers.append(server)
-        try server.start()
+        server.isOn = true
     }
     
     func stopAllServers() {
