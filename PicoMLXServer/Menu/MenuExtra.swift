@@ -31,12 +31,16 @@ struct MenuExtra: View {
         
         Divider()
         
+        Button("Dependency Setup...") {
+            NSApplication.show()
+            openWindow(id: "setup")
+        }
+        
         SettingsLink()
             .keyboardShortcut(",", modifiers: .command)
         
-        Button("Setup...") {
-            NSApplication.show()
-            openWindow(id: "setup")
+        Button("Check for Updates...") {
+            openURL(URL(string: "https://github.com/ronaldmannak/PicoMLXServer/tags")!)
         }
         
         Divider()

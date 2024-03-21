@@ -40,6 +40,7 @@
 		F818D9702B96A4DE00BA4664 /* PicoMLXServerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F818D96F2B96A4DE00BA4664 /* PicoMLXServerUITestsLaunchTests.swift */; };
 		F818D97D2B96A7B400BA4664 /* MenuExtra.swift in Sources */ = {isa = PBXBuildFile; fileRef = F818D97C2B96A7B400BA4664 /* MenuExtra.swift */; };
 		F818D97F2B96A80500BA4664 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F818D97E2B96A80500BA4664 /* SettingsView.swift */; };
+		F846FDC92BACBFB5005EE38A /* Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F846FDC82BACBFB5005EE38A /* Bundle.swift */; };
 		F84D2A6A2BAA4C5900FB2D41 /* ServerCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84D2A692BAA4C5900FB2D41 /* ServerCellView.swift */; };
 		F861C3842BAA67E4004BBB86 /* ServerLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F861C3832BAA67E4004BBB86 /* ServerLogView.swift */; };
 		F88F11102BA92D5B004743A5 /* ServerManagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88F110F2BA92D5B004743A5 /* ServerManagerView.swift */; };
@@ -97,6 +98,7 @@
 		F818D96F2B96A4DE00BA4664 /* PicoMLXServerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicoMLXServerUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		F818D97C2B96A7B400BA4664 /* MenuExtra.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuExtra.swift; sourceTree = "<group>"; };
 		F818D97E2B96A80500BA4664 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		F846FDC82BACBFB5005EE38A /* Bundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bundle.swift; sourceTree = "<group>"; };
 		F84D2A692BAA4C5900FB2D41 /* ServerCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerCellView.swift; sourceTree = "<group>"; };
 		F861C3832BAA67E4004BBB86 /* ServerLogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerLogView.swift; sourceTree = "<group>"; };
 		F88F110F2BA92D5B004743A5 /* ServerManagerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerManagerView.swift; sourceTree = "<group>"; };
@@ -158,6 +160,7 @@
 			children = (
 				F8145FD72BA16DD90086CBE7 /* String.swift */,
 				F8145FF02BA226170086CBE7 /* NSApplication.swift */,
+				F846FDC82BACBFB5005EE38A /* Bundle.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -439,6 +442,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F8907A3C2BA8B42200246735 /* ServerOperation.swift in Sources */,
+				F846FDC92BACBFB5005EE38A /* Bundle.swift in Sources */,
 				F8145FFE2BA27C960086CBE7 /* DependencyState.swift in Sources */,
 				F88F11122BA92D75004743A5 /* ServerListMenu.swift in Sources */,
 				F818D97F2B96A80500BA4664 /* SettingsView.swift in Sources */,
@@ -623,7 +627,7 @@
 				CODE_SIGN_ENTITLEMENTS = PicoMLXServer/PicoMLXServer.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"PicoMLXServer/Preview Content\"";
 				DEVELOPMENT_TEAM = TPKP4XK352;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -636,7 +640,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				MARKETING_VERSION = 0.1.1;
+				MARKETING_VERSION = 0.1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.starlingprotocol.PicoMLXServer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -652,7 +656,7 @@
 				CODE_SIGN_ENTITLEMENTS = PicoMLXServer/PicoMLXServer.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"PicoMLXServer/Preview Content\"";
 				DEVELOPMENT_TEAM = TPKP4XK352;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -665,7 +669,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				MARKETING_VERSION = 0.1.1;
+				MARKETING_VERSION = 0.1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.starlingprotocol.PicoMLXServer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;

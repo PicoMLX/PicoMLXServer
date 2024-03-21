@@ -46,11 +46,6 @@ struct PicoMLXServerApp: App {
                 .environment(serverController)
         }
         
-//        Window("Server Logs", id: "serverLog") {
-//            ServerLogView()
-//                .environment(serverController)
-//        }
-        
         WindowGroup(id: "serverLog", for: UUID.self) { $serverUUID in
             ServerLogView(serverUUID: serverUUID)
                 .environment(serverController)
