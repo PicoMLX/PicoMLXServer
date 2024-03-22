@@ -21,6 +21,11 @@ struct MenuExtra: View {
         
         ServerListMenu()
         
+        Button("Manage Servers...") {
+            NSApplication.show()
+            openWindow(id: "servers")
+        }
+                
         Button("Open Chat client") {
             // TODO: make this a setting in Settings
             // Can we ad an optional link to the app store if app isn't installed?

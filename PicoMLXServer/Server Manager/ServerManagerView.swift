@@ -34,8 +34,19 @@ struct ServerManagerView: View {
         VStack {
             
             ServerListView(showError: $showError, error: $error)
-                .padding()
+                .padding([.leading, .top, .trailing])
                 .frame(maxWidth: .infinity)
+            
+            HStack {
+                Button("Open model cache in Finder") {
+                    let url = FileManager.default.homeDirectoryForCurrentUser.appending(path: ".cache/huggingface/hub/")
+                    NSWorkspace.shared.selectFile(nil, inFileViewerRootedAtPath: url.path)
+                }
+                .buttonStyle(.bordered)
+                .controlSize(.small)
+                .padding(.leading)
+                Spacer()
+            }
 
             GroupBox {
                 HStack {

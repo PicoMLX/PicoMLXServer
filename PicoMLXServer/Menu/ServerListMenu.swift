@@ -21,22 +21,9 @@ struct ServerListMenu: View {
                     .disabled(true)
             } else {
                 ForEach(serverController.servers,  id: \.self) { server in
-                    MenuToggle(server: server, isOn: server.isOn)
+                    MenuToggle(server: server)
                 }
             }
-            
-            Divider()
-            
-            Button("New Server...") {
-                NSApplication.show()
-                openWindow(id: "servers")
-            }            
-            
-            Button("Show cache...") {
-                let url = FileManager.default.homeDirectoryForCurrentUser.appending(path: ".cache/huggingface/hub/")
-                NSWorkspace.shared.selectFile(nil, inFileViewerRootedAtPath: url.path)
-            }
-            .controlSize(.small)
         }
     }
 }
@@ -46,10 +33,10 @@ struct ServerListMenu: View {
         .environment(ServerController())
 }
 
-struct MenuToggle: View {
+/// This is a workaround for an issue where an inline toggle in the menu wouldn't update
+fileprivate struct MenuToggle: View {
     
     let server: Server
-    @State var isOn: Bool
     
     var body: some View {
         @Bindable var server = server

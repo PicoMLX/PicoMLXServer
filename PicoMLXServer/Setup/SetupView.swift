@@ -70,8 +70,7 @@ struct SetupView: View {
                                                     }
                                                 } catch {
                                                     self.error = error
-                                                    showError = true
-                                                    
+                                                    showError = true                                                    
                                                 }
                                             }
                                             .disabled(dependency.state.disableButton)
