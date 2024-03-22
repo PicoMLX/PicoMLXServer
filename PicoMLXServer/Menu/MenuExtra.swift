@@ -45,7 +45,7 @@ struct MenuExtra: View {
         
         Divider()
         
-        Button("Stop all servers") {
+        Button("Stop all Servers") {
             serverController.stopAllServers()
         }
         .keyboardShortcut(".", modifiers: .command)

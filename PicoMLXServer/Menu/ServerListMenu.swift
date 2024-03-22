@@ -6,11 +6,13 @@
 //
 
 import SwiftUI
+import AppKit
 
 struct ServerListMenu: View {
     
     @Environment(ServerController.self) private var serverController
     @Environment(\.openWindow) var openWindow
+    @Environment(\.openURL) var openURL
     
     var body: some View {
         Menu("Servers") {
@@ -29,6 +31,12 @@ struct ServerListMenu: View {
                 NSApplication.show()
                 openWindow(id: "servers")
             }            
+            
+            Button("Show cache...") {
+                let url = FileManager.default.homeDirectoryForCurrentUser.appending(path: ".cache/huggingface/hub/")
+                NSWorkspace.shared.selectFile(nil, inFileViewerRootedAtPath: url.path)
+            }
+            .controlSize(.small)
         }
     }
 }
