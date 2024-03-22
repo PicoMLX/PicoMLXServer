@@ -40,27 +40,17 @@ struct ServerListMenu: View {
 
 struct MenuToggle: View {
     
-    var server: Server
+    let server: Server
     @State var isOn: Bool
     
     var body: some View {
-        Toggle(isOn: $isOn) {
+        @Bindable var server = server
+        Toggle(isOn: $server.isOn) {
             Text("\(server.model):\(String(server.port))")
                 .truncationMode(.head)
         }
         .onAppear {
             print(server.isOn)
-        }
-        .onChange(of: isOn, initial: false) { _, newValue in
-            if newValue == false, server.isOn == true {
-                server.stop()
-            } else if newValue == true, server.isOn == false {
-                do {
-                    try server.start()
-                } catch {
-                    print(error)
-                }
-            }
         }
     }
 }
