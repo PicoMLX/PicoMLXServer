@@ -154,7 +154,7 @@
 	</dict>
 	<dict>
 		<key>name</key>
-		<string>MLX using pip</string>
+		<string>MLX using pip (optional)</string>
 		<key>projectUrl</key>
 		<string>https://github.com/ml-explore</string>
 		<key>documentationUrl</key>

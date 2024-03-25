@@ -52,13 +52,11 @@ final class Server: Identifiable {
             let operation = try serverOperation()
             Queue.shared.serverQueue.addOperation(operation)
             self.operation = operation
-            isOn = true
-        }
+        }        
     }
     
     private func stop() {
         operation?.cancel()
-        isOn = false
     }
     
     /// Creates a server operation
@@ -68,6 +66,7 @@ final class Server: Identifiable {
         operation.outputClosure = { [weak self] in self?.log.append($0) }
         operation.completionBlock = { [self] in
             self.log.append("\nServer \(self.model) on port \(self.port) terminated")
+            if self.isOn == true { self.isOn = false }
         }
         return operation
     }
