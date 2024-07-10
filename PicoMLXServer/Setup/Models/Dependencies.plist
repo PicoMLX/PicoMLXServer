@@ -114,23 +114,21 @@
 			</dict>
 			<dict>
 				<key>name</key>
-				<string>mlxserver</string>
-				<key>versionCommand</key>
-				<string>test</string>
+				<string>FastMLX</string>
 				<key>versionCommands</key>
 				<array>
 					<string>conda activate pico</string>
-					<string>pip show mlxserver</string>
+					<string>pip show fastmlx</string>
 					<string>conda deactivate</string>
 				</array>
 				<key>minimumVersionRequired</key>
-				<string>0.1.14</string>
+				<string>0.0.1</string>
 				<key>versionRegex</key>
 				<string>(?&lt;=Version: )[\d.]+</string>
 				<key>installCommands</key>
 				<array>
 					<string>conda activate pico</string>
-					<string>pip install mlxserver</string>
+					<string>pip install fastmlx</string>
 					<string>conda deactivate</string>
 				</array>
 				<key>isInstalledCommand</key>
@@ -138,15 +136,15 @@
 				<key>updateCommands</key>
 				<array>
 					<string>conda activate pico</string>
-					<string>conda update --yes mlx</string>
+					<string>conda update --yes fastmlx</string>
 					<string>conda deactivate</string>
 				</array>
 				<key>outdatedCommand</key>
-				<string></string>
+				<string>pip list --outdated | grep fastmlx</string>
 				<key>comment</key>
-				<string>MLX installed using conda-forge</string>
+				<string>FastMLX installed using confa-forge</string>
 				<key>url</key>
-				<string>https://ml-explore.github.io/mlx/build/html/install.html</string>
+				<string>https://blaizzy.github.io/fastmlx</string>
 				<key>required</key>
 				<true/>
 			</dict>
@@ -253,10 +251,10 @@
 			</dict>
 			<dict>
 				<key>name</key>
-				<string>mlxserver</string>
+				<string>FastMLX</string>
 				<key>versionCommands</key>
 				<array>
-					<string>pip show mlxserver</string>
+					<string>pip show fastmlx</string>
 				</array>
 				<key>versionRegex</key>
 				<string>(?&lt;=Version: )[\d.]+</string>
@@ -270,16 +268,16 @@
 				<string></string>
 				<key>updateCommands</key>
 				<array>
-					<string>pip install mlxserver --upgrade</string>
+					<string>pip install fastmlx --upgrade</string>
 				</array>
 				<key>outdatedCommands</key>
 				<array>
-					<string>pip list --outdated | grep mlxserver</string>
+					<string>pip list --outdated | grep fastmlx</string>
 				</array>
 				<key>comment</key>
-				<string>MLX Server</string>
+				<string>FastMLX</string>
 				<key>url</key>
-				<string>https://www.mlxserver.com/</string>
+				<string>https://blaizzy.github.io/fastmlx</string>
 				<key>required</key>
 				<true/>
 			</dict>
